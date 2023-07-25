@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<!--
-Template Name: Skaxis
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
--->
 <html lang="">
-<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
 <title>Work | Experiences</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <link href="../layout/styles/extra.css" rel="stylesheet" type="text/css" media="all">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
-<div class="bgded overlay light" style="background-image:url('../images/demo/backgrounds/01.png');"> 
+<div class="bgded overlay" style="height: 500px; background-image:url('../images/demo/backgrounds/experiences.jpg');background-attachment: fixed;"> 
   <!-- ################################################################################################ -->
   <div class="wrapper row1">
     <header id="header" class="hoc clear"> 
@@ -148,8 +140,8 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="content three_quarter"> 
       <!-- ################################################################################################ -->
-      <h1 style="font-size: 36px;">Experiences</h1>
-      <h1>Elevate Technologies</h1>
+      <h1 style="font-size: 40px; font-weight: bold;">Experiences</h1>
+        <h2 class="companyTitle">Elevate Technologies</h2>
       <img style="width: 150px; height: 150px;"  class="imgr borderedbox inspace-5" src="../images/demo/elevateLogo.png" alt="">
       
       
@@ -157,13 +149,35 @@ Licence URI: https://www.os-templates.com/template-terms
       <p>Elevate Technologies is a business analytics company that introduces machine learning from their software to combat elevator breakdowns
         and expensive maintenance requests. 
       </p>
-      <p>Dapiensociis <a href="#">temper donec auctortortis cumsan</a> et curabitur condis lorem loborttis leo. Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem.</p>
+      <p>At Elevate, I worked on various new product MVPs and built the roadmap for the mobile app while we made the transition 
+        into developing the Saas Platform. During this time, I used various project management softwares to encourage organized 
+        collaboration amongst the designers and engineers.</p>
+
+        //Make this a dropdown thingy!!
 
       <div class="horizontal-container">
-        <img src="../images/demo/experience/elevate/mockApp.png" alt="Photo 1">
+        <div class="container-vertical"> <!-- New container for gallery and buttons -->
+        <div class="image-gallery">
+          <img style="width: 150px" src="../images/demo/experience/elevate/appHome.png" alt="Elevate App Home Screen">
+          <img style="width: 150px" src="../images/demo/experience/elevate/appMain.png" alt="Elevate App Main Screen">
+          <img style="width: 150px" src="../images/demo/experience/elevate/appSend.png" alt="Elevate App Send Screen">
+          <img style="width: 150px" src="../images/demo/experience/elevate/appLaunch.png" alt="Elevate App Launch Screen">
+        </div>
+  
+        <div class="slideshow-buttons">
+          <button class="prev-button" onclick="showImage(-1)">&#10094;</button>
+          <button class="next-button" onclick="showImage(1)">&#10095;</button>
+        </div>
+      </div>
+
         <div class="horizontal-text">
           <h4>Elevate App</h4>
-          <p>I developed the MVP for the Elevate App with functioning location services and connection to the AWS server.</p>
+          <p>Using XCode, I designed and connected the front-end to the backend for our MVP. The MVP's functionality included 
+            4 screens, enabled location services, and real-time updates to the AWS Server. Our physical model that connected
+            to the Elevate App's call function was made from servos and an arduino built onto the elevator buttons. 
+          </br>
+          This MVP got support from Indiana University's Facility Services Manager, Kirk Lowry, and continued praise from Homeland Security.
+          </p>
         </div>
       </div>
       <div class="horizontal-container">
@@ -177,10 +191,9 @@ Licence URI: https://www.os-templates.com/template-terms
       <h4 style="font-size: 20px;">Skills:</h4><p>Python, JavaScript, Swift, XCode, Linux, HTML/CSS</p>
       <h4 style="font-size: 20px;">Relevant Applications:</h4><p>ClickUp, AWS, React-Native, Figma, Procreate</p>
 
-      <div class="image-gallery">
+      <div class="image-gallery2">
         <img src="../images/demo/elevateBanner.png" alt="Image 1">
-        <img src="../images/demo/noyack.png" alt="Image 2">
-        <img src="../images/demo/812consulting.png" alt="Image 3">
+
       </div>
 
       <div class="slideshow-buttons">
