@@ -18,12 +18,21 @@
   display: block;
 }
 
+.gallery-container {
+  width: 300px;
+}
+
 /* Horizontal Containers */
 .horizontal-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
   flex-basis: calc(50% - 20px); /* Set the containers to take half of the available space with margin */
+}
+.horizontal-container-tiktok {
+  margin-top: 10px;
+  flex-basis: calc(50% - 20px); /* Set the containers to take half of the available space with margin */
+  margin-left: 50px;
 }
 
 .horizontal-container img {
@@ -60,6 +69,9 @@
 .companyTitle {
   font-size: 35px;
 }
+.companySubTitle {
+  font-size: 27px;
+}
 
 .role {
   font-size: 20px;
@@ -72,13 +84,48 @@
   top: 5px; 
 }
 
-hr {
+.thick {
   margin: 20px 0;
   border: none;
   border: 4px solid #333; 
 }
 
 video {
-  background-color: skyblue;
+  background-color: rgb(92, 140, 159);
 }
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}.slide:first-child {
+  display: block;
+}.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(49, 49, 49);
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.small-iframe {
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+
 

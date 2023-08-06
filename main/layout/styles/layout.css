@@ -165,7 +165,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav li li a{border:solid; border-width:0 0 1px 0;}
 #mainav .drop{padding-left:15px;}
 #mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
-#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after, #mainav li li .drop::after{content:"";}
 #mainav .drop::after{top:35px; left:5px;}
 #mainav li li .drop::after{top:15px; left:5px;}
 #mainav ul ul{visibility:hidden; opacity:0;}
@@ -181,7 +181,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #breadcrumb ul{margin:0; padding:0; list-style:none; text-transform:uppercase;}
 #breadcrumb li{display:inline-block; margin:0 6px 0 0; padding:0;}
 #breadcrumb li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px;}
-#breadcrumb li a::after{top:3px; right:0; content:"\f101";}
+#breadcrumb li a::after{top:3px; right:0; content:"&raquo;";}
 #breadcrumb li:last-child a{margin:0; padding:0;}
 #breadcrumb li:last-child a::after{display:none;}
 #breadcrumb .heading{margin:0; font-size:1.6rem;}
@@ -190,7 +190,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 .sidebar nav{display:block; width:100%;}
 .sidebar nav li{margin:0 0 3px 0; padding:0;}
 .sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 1px 0;}
-.sidebar nav a::after{top:9px; left:5px; content:"\f101";}
+.sidebar nav a::after{top:9px; left:5px; content:"";}
 .sidebar nav ul ul a{padding-left:35px;}
 .sidebar nav ul ul a::after{left:25px;}
 .sidebar nav ul ul ul a{padding-left:55px;}
@@ -253,19 +253,20 @@ td{border-width:0 1px;}
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
 body{color:#474747; background-color:#FFFFFF;}
-a{color:#D55A77;}
+a{color:#41729F;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
-input:focus, textarea:focus, *:required:focus{border-color:#D55A77;}
+input:focus, textarea:focus, *:required:
+focus{border-color:#274472	;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 .overlay.light{color:#474747;}
 .overlay.light::after{background-color:rgba(233,233,233,.9);/* #E9E9E9 */}
-.overlay.coloured::after{background-color:rgba(213,90,119,.55);/* #D55A77 */}
+.overlay.coloured::after{background-color:#5885AF;/* #D55A77 */}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#D55A77; border-color:#D55A77;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#274472; border-color:#274472;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
 
@@ -288,7 +289,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#D55A77;}
 
 /* Page Intro */
 #pageintro footer input, #pageintro footer button{color:#000000; background-color:#FFFFFF;}
-#pageintro footer button{color:#FFFFFF; background-color:#D55A77;}
+#pageintro footer button{color:#FFFFFF; background-color:#274472;}
 
 .flex-direction-nav a{color:rgba(255,255,255,1);}
 .flex-control-paging li a{background-color:rgba(255,255,255,1); border-color:rgba(255,255,255,0);}
@@ -305,7 +306,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#D55A77;}
 
 #footer input, #footer button{border-color:transparent;}
 #footer input{color:#474747; background-color:#E9E9E9;}
-#footer input:focus{border-color:#D55A77;}
+#footer input:focus{border-color:#274472;}
 #footer button{color:#FFFFFF; background-color:#D55A77;}
 
 
@@ -315,16 +316,16 @@ input:focus, textarea:focus, *:required:focus{border-color:#D55A77;}
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#D55A77; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#41729F; background-color:inherit;}
 #mainav li li a, #mainav .active li a{color:#474747; background-color:rgba(233,233,233,.8);/* #E9E9E9 */ border-color:rgba(255,255,255,.4);}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#D55A77;}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#41729F;}
 #mainav form select{color:#FFFFFF; background-color:#000000;}
 
 #breadcrumb a{color:inherit; background-color:inherit;}
 #breadcrumb li:last-child a{color:#D55A77;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
-.container .sidebar nav a:hover{color:#D55A77;}
+.container .sidebar nav a:hover{color:#5885AF;}
 
 .pagination a, .pagination strong{border-color:#D7D7D7;}
 .pagination .current *{color:#FFFFFF; background-color:#D55A77;}
